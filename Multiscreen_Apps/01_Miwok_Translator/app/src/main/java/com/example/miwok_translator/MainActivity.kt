@@ -3,7 +3,6 @@ package com.example.miwok_translator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,19 +11,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        numbers.setOnClickListener {
+        tv_numbers.setOnClickListener {
             startActivity(Intent(this, NumbersActivity::class.java))
         }
 
-        family.setOnClickListener {
+        tv_family.setOnClickListener {
             startActivity(Intent(this, FamilyActivity::class.java))
         }
 
-        phrases.setOnClickListener {
+        tv_phrases.setOnClickListener {
             startActivity(Intent(this, PhrasesActivity::class.java))
         }
 
-        colors.setOnClickListener {
+        tv_colors.setOnClickListener {
             startActivity(Intent(this, ColorsActivity::class.java))
         }
     }
