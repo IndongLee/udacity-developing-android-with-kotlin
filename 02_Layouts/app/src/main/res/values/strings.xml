@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">02_Layout</string>
+    <string name="name">Indong Lee</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="hint">What is your Nickname?</string>
+    <string name="done">Done</string>
+</resources>
