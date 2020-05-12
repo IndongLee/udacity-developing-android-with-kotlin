@@ -12,10 +12,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
+    private var myName = MyName("Indong Lee")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.myName = myName
 
 //        btn_done.setOnClickListener {
 //            addNickname(it)
@@ -27,7 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun addNickname(view: View) {
         binding.apply {
-            tv_nickname.text = et_name.text
+            myName?.nickname = et_name.text.toString()
+            invalidateAll()
             et_name.visibility = View.GONE
             view.visibility = View.GONE
             tv_nickname.visibility = View.VISIBLE
