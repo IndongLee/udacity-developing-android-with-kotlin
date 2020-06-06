@@ -27,9 +27,13 @@ class TitleFragment : Fragment() {
 //            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
 //        }
 
-        binding.playButton.setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
-        )
+//        binding.playButton.setOnClickListener(
+//                Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+//        )
+
+        binding.playButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+        }
         setHasOptionsMenu(true)
         return binding.root
     }
