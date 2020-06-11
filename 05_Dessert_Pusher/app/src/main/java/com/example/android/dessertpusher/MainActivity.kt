@@ -18,6 +18,7 @@ package com.example.android.dessertpusher
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -64,6 +65,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.i("MainActivity", "onCreate called")
 
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -145,5 +147,15 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
             R.id.shareMenuButton -> onShare()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("MainActivity", "onStart called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("MainActivity", "onResume called")
     }
 }
