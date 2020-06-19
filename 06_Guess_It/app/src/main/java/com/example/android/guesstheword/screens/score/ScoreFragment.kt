@@ -60,6 +60,7 @@ class ScoreFragment : Fragment() {
         })
 
         binding.scoreViewModel = viewModel
+        binding.lifecycleOwner = this
 
 //        binding.playAgainButton.setOnClickListener { viewModel.onPlayAgain() }
 
