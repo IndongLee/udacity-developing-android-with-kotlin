@@ -36,7 +36,8 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toStartOf="@+id/end_grid"
             app:layout_constraintStart_toStartOf="@+id/start_grid"
-            app:layout_constraintTop_toBottomOf="@id/image" />
+            app:layout_constraintTop_toBottomOf="@id/image"
+            style="@style/TextAppearance.Title" />
 
         <TextView
             android:id="@+id/intro_text"
@@ -58,7 +59,8 @@
             android:textColor="#555555"
             app:layout_constraintEnd_toStartOf="@id/end_grid"
             app:layout_constraintStart_toEndOf="@id/start_grid"
-            app:layout_constraintTop_toBottomOf="@+id/intro_text" />
+            app:layout_constraintTop_toBottomOf="@+id/intro_text"
+            style="@style/TextAppearance.Subtitle" />
 
         <TextView
             android:id="@+id/description"
