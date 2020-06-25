@@ -17,13 +17,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-                android:background="@color/colorPrimaryDark">
+                android:background="?colorPrimaryDark">
 
                 <ImageView
                     android:id="@+id/hero_image"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:tint="?colorOnPrimary"
+                    android:tint="?colorOnSecondary"
                     android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/logo" />
             </androidx.appcompat.widget.Toolbar>
